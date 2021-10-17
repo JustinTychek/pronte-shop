@@ -8,4 +8,4 @@ I believe that my decisions in this project would provide lots of value for my c
 
 My audience for this site is adults and families with children. I wanted to give them easy access to purchasing clothing items through my design, as well as allow them to find out information about the seller and contact the seller.
 
-https://in-info-web4.informatics.iupui.edu/~jmtychek/pronte-shop/#items
+https://in-info-web4.informatics.iupui.edu/~jmtychek/pronte-shop/
