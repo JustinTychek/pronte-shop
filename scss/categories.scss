@@ -1,0 +1,113 @@
+#categories {
+  height: 50%;
+  background-color: #586b78;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: white;
+    font-size: 34px;
+    margin-top: 33px;
+  }
+
+  .category-circle-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 40px;
+
+    .category-circle {
+      height: 218px;
+      width: 218px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      text-decoration: none;
+
+      p {
+        margin-top: 230px;
+        color: white;
+        font-size: 23px;
+      }
+    }
+
+    .category-circle:hover {
+      p {
+        color: #9fc5db;
+      }
+    }
+
+    .women-circle {
+      background-image: url(../images/categories/women-model.jpg);
+      background-position: top;
+      background-size: 370px;
+    }
+
+    .men-circle {
+      background-image: url(../images/categories/men-model.jpg);
+      background-position: top;
+      background-size: 400px;
+    }
+
+    .kids-circle {
+      background-image: url(../images/categories/kids-model.jpg);
+    }
+
+    .shoes-circle {
+      background-image: url(../images/categories/shoes-model.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #categories {
+    height: 42%;
+    .category-circle-holder {
+      .category-circle {
+        height: 150px;
+        width: 150px;
+        p {
+          margin-top: 160px;
+        }
+      }
+
+      .women-circle {
+        background-size: 250px;
+      }
+
+      .men-circle {
+        background-size: 270px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #categories {
+    height: 35%;
+    .category-circle-holder {
+      width: 90%;
+      .category-circle {
+        height: 100px;
+        width: 100px;
+        p {
+          margin-top: 110px;
+          font-size: 18px;
+        }
+      }
+
+      .women-circle {
+        background-size: 170px;
+      }
+
+      .men-circle {
+        background-size: 190px;
+      }
+    }
+  }
+}

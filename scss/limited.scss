@@ -1,0 +1,117 @@
+#limited {
+  min-height: calc(100% - 70px);
+  width: 100%;
+  // background-color: rgb(221, 221, 221);
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 56px;
+    color: #724929;
+    margin-top: 43px;
+  }
+
+  .limited-holder {
+    width: 88%;
+    min-height: 484px;
+    margin-top: 75px;
+    // background-color: palevioletred;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .limited-card {
+      width: 280px;
+      height: 485px;
+      background-color: #efded4be;
+
+      .women-blouse {
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/limited/model01.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .women-crewneck {
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/limited/model02.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .women-jacket {
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/limited/model03.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .women-dress {
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/limited/model04.jpg);
+        background-position: top;
+        background-size: 670px;
+      }
+
+      .card-text {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+
+        h3 {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #7798ab;
+          font-size: 17px;
+          font-weight: bold;
+        }
+
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  #limited {
+    .limited-holder {
+      width: 60%;
+      .limited-card {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #limited {
+    .limited-holder {
+      width: 80%;
+      justify-content: center;
+      .limited-card {
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+#items {
+  min-height: calc(100% - 70px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // position: relative;
+
+  .items-title {
+    // position: absolute;
+    height: 100%;
+    width: 60px;
+    // background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 57px;
+
+    h1 {
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      // height: 100%;
+      font-size: 70px;
+      color: #7798ab;
+
+      transform: rotate(180deg);
+      margin-left: 50px;
+    }
+  }
+
+  .item-holder {
+    min-height: 700px;
+    width: 975px;
+    margin-right: 120px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+    .item-boxes {
+      width: 245px;
+      height: 300px;
+
+      .item-image {
+        width: 100%;
+        height: 245px;
+        background-size: cover;
+        background-position: center;
+        border-bottom: 1.5px solid black;
+      }
+
+      .item-image1 {
+        background-image: url(../images/items/men-fleece.jpg);
+      }
+
+      .item-image2 {
+        background-image: url(../images/items/women-jeans.jpg);
+      }
+
+      .item-image3 {
+        background-image: url(../images/items/girl-long-sleeve.jpg);
+      }
+
+      .item-image4 {
+        background-image: url(../images/items/trucker-jacket.jpg);
+      }
+
+      .item-image5 {
+        background-image: url(../images/items/women-plaid.jpg);
+      }
+
+      .item-image6 {
+        background-image: url(../images/items/boy-pjs.jpg);
+      }
+
+      p {
+        margin: 7px 0px;
+        font-style: 13px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #7798ab;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #efded4;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1300px) {
+  #items {
+    .items-title {
+      margin-right: 80px;
+    }
+
+    .item-holder {
+      margin-right: 0;
+      .item-boxes {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1098px) {
+  #items {
+    .items-title {
+      height: 1000px;
+      // background-color: blue;
+    }
+
+    .item-holder {
+      justify-content: space-evenly;
+
+      .item-boxes {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

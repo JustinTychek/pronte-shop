@@ -1,0 +1,81 @@
+#social-media {
+  height: 37%;
+  background-color: #2f4858;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  h2 {
+    color: white;
+    font-size: 35px;
+  }
+
+  .icon-holder {
+    width: 70%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+
+    .facebook {
+      height: 100%;
+      width: 140px;
+      background-image: url(../images/social-media/facebook.svg);
+      background-size: cover;
+    }
+
+    .instagram {
+      height: 100%;
+      width: 140px;
+      background-image: url(../images/social-media/instagram.svg);
+      background-size: cover;
+    }
+
+    .twitter {
+      height: 100%;
+      width: 140px;
+      background-image: url(../images/social-media/twitter.svg);
+      background-size: cover;
+    }
+
+    .pintrest {
+      height: 100%;
+      width: 140px;
+      background-image: url(../images/social-media/pinterest.svg);
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #social-media {
+    .icon-holder {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #social-media {
+    height: 25%;
+    .icon-holder {
+      height: 70px;
+
+      .facebook {
+        width: 70px;
+      }
+
+      .instagram {
+        width: 70px;
+      }
+
+      .twitter {
+        width: 70px;
+      }
+
+      .pintrest {
+        width: 70px;
+      }
+    }
+  }
+}
